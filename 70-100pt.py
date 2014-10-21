@@ -25,27 +25,30 @@ drawpad.grid(row=0, column=1)
 # Insert your code here to draw the house!
 
 #house base
-rectangle = drawpad.create_rectangle(100,600,700,200)
+rectangle = drawpad.create_rectangle(100,600,700,200,fill="red")
 
 #roof
 roof1 = drawpad.create_line(400,50,0,250)
 roof2 = drawpad.create_line(400,50,800,250)
 
 #windows
-window1 = drawpad.create_rectangle(150,500,250,425)
-window2 = drawpad.create_rectangle(150,350,250,275)
-window3 = drawpad.create_rectangle(550,350,650,275)
-window4 = drawpad.create_rectangle(550,500,650,425)
+window1 = drawpad.create_rectangle(150,500,250,425,fill="white")
+window2 = drawpad.create_rectangle(150,350,250,275,fill="white")
+window3 = drawpad.create_rectangle(550,350,650,275,fill="white")
+window4 = drawpad.create_rectangle(550,500,650,425,fill="white")
 
 #door
-door = drawpad.create_rectangle(300,600,400,400)
+door = drawpad.create_rectangle(300,600,400,400,fill="brown")
 
 #door handle
-handle = drawpad.create_oval(310,510,320,525)
+handle = drawpad.create_oval(310,510,320,525,fill="yellow")
 
 #chimney
 chimney1 = drawpad.create_line(500,100,500,50)
 chimney2 = drawpad.create_line(500,50,550,50)
 chimney3 = drawpad.create_line(550,50,550,125)
+
+#grass
+grass = drawpad.create_rectangle(0,600,800,575,fill='green')
 
 root.mainloop()
