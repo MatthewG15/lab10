@@ -40,6 +40,12 @@ window4 = drawpad.create_rectangle(550,500,650,425)
 #door
 door = drawpad.create_rectangle(300,600,400,400)
 
+#door handle
+handle = drawpad.create_oval(310,510,320,525)
 
+#chimney
+chimney1 = drawpad.create_line(500,100,500,50)
+chimney2 = drawpad.create_line(500,50,550,50)
+chimney3 = drawpad.create_line(550,50,550,125)
 
 root.mainloop()
